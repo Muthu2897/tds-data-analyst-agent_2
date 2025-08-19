@@ -106,20 +106,8 @@ Now, navigate to `http://localhost:8000/` in your browser. 🌐
 
 -   **Frontend:** HTML5, CSS, JavaScript (with a modern, Bootstrap-inspired UI)
 
-✍️ Author
----------
-
--   **Jha Sumitkumar Gangadhar**
-
--   B.Sc. Student, IIT Madras
-
--   **GitHub:** '[@Sumit G Jha](https://github.com/23f2004586)'
--   **Linkedin:** https://www.linkedin.com/in/sumigjha
-
-- Special Thanks to '[@sameer Thakur](https://github.com/23f2003673)'
-* * * * *
-
 📜 License
 ----------
+
 
 This project is licensed under the **MIT License** -- free for personal and commercial use.
