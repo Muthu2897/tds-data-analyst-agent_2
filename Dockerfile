@@ -21,15 +21,13 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY app.py .
 COPY index.html .
 COPY entrypoint.sh .
+COPY .env* ./   # optional, only if exists
 
-# Copy environment file if it exists
-COPY .env* ./
+# Ensure LF line endings and executable permissions
+RUN sed -i 's/\r$//' entrypoint.sh && chmod +x entrypoint.sh
 
-# Make entrypoint script executable
-RUN chmod +x entrypoint.sh
-
-# Expose the port the app runs on
+# Expose the port
 EXPOSE 8000
 
-# Command to run the application
-CMD ["./entrypoint.sh"]
+# Run the app
+ENTRYPOINT ["/app/entrypoint.sh"]
